@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row_layout_height">64dp</dimen>
+
+    <dimen name="main_ques_text_size">16sp</dimen>
+
+    <dimen name="row_margin">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+
+    <dimen name="deep_elevation">4dp</dimen>
+    <dimen name="row_elevation">2dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="score_text_size">16sp</dimen>
+
+    <dimen name="study_japanese_margin">4dp</dimen>
+    <dimen name="study_edittext_margin">10dp</dimen>
+
+    <dimen name="study_index_size">12sp</dimen>
+    <dimen name="study_japanese_size">16sp</dimen>
+    <dimen name="study_english_size">16sp</dimen>
+    <dimen name="study_judge_size">50sp</dimen>
+
+    <dimen name="record_title_size">20sp</dimen>
+    <dimen name="record_rate_number_size">64sp</dimen>
+</resources>

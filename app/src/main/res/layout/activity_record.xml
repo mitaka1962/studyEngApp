@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10"
+    tools:context="com.example.study.studyingenglish.RecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/deep_elevation"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/record_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_6"
+            android:text="@string/study_title_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/record_title_size" />
+
+        <TextView
+            android:id="@+id/record_correct_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_correct_rate_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/record_rate_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:text="@string/record_rate_number_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/record_rate_number_size" />
+
+            <TextView
+                android:id="@+id/record_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/record_rate_number"
+                android:layout_toEndOf="@+id/record_rate_number"
+                android:text="@string/record_percent_text"
+                android:textSize="@dimen/record_title_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/record_button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/record_button_ok_text" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="@dimen/deep_elevation"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+
+        <Switch
+            android:id="@+id/main_random_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:switchPadding="@dimen/padding_10"
+            android:text="@string/main_random_switch_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/main_ques_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:text="@string/main_ques_num_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/main_ques_text_size"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <NumberPicker
+                android:id="@+id/main_num_pick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/main_ques_num"/>
+
+            <TextView
+                android:id="@+id/main_ques_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:layout_marginStart="@dimen/margin_18"
+                android:text="@string/main_ques_start_text"
+                android:layout_toEndOf="@+id/main_num_pick"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/main_ques_text_size"/>
+
+            <NumberPicker
+                android:id="@+id/main_start_pick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/main_ques_start"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/background_gray" />
+</LinearLayout>

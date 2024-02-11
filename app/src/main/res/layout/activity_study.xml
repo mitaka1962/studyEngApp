@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/deep_elevation"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                android:id="@+id/study_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/study_index_text"
+                android:textSize="@dimen/study_index_size"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <TextView
+                android:id="@+id/study_japanese"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/study_japanese_margin"
+                android:text="@string/study_japanese_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/study_japanese_size" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/study_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/study_edittext_margin"
+            android:background="@android:color/white"
+            android:elevation="@dimen/row_elevation"
+            android:gravity="top"
+            android:hint="@string/study_hint_text"
+            android:inputType="text|textMultiLine"
+            android:padding="@dimen/padding_10"
+            android:textSize="@dimen/study_english_size"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/study_judge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/margin_18"
+        android:layout_marginStart="@dimen/padding_10"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="20.0"
+        android:text="@string/study_correct_text"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/study_judge_size"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_18"
+        android:alpha="0.6"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@drawable/float_button_background"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_done"
+        android:contentDescription="floating button" />
+
+</RelativeLayout>

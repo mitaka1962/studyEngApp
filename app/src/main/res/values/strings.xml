@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">英語訓練道場</string>
+
+    <string name="row_title_text">Title</string>
+    <string name="row_score_text">0 / 0</string>
+
+    <string name="main_random_switch_text">ランダム化</string>
+    <string name="main_ques_num_text">問題数</string>
+    <string name="main_ques_start_text">開始位置</string>
+
+    <string name="study_title_text">タイトル</string>
+    <string name="study_index_text">1 / 10</string>
+    <string name="study_japanese_text">日本語文日本語文日本語文日本語文日本語文日本語文日本語文
+        日本語文日本語文日本語文日本語文日本語文日本語文日本語文日本語文日本語文日本語文</string>
+    <string name="study_hint_text">Enter your answer</string>
+    <string name="study_correct_text">Correct!</string>
+    <string name="study_wrong_text">Wrong...</string>
+
+    <string name="record_action_bar_text">成績</string>
+    <string name="record_correct_rate_text">正答率</string>
+    <string name="record_rate_number_text">100</string>
+    <string name="record_percent_text">%</string>
+    <string name="record_button_ok_text">OK</string>
+</resources>
