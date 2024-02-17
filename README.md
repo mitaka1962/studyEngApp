@@ -1,2 +1,2 @@
 Android application for learning English
-![メインアクティビティ画面](https://mitaka.boo.jp/images/article20/main_activity.jpg)
+<img src="https://mitaka.boo.jp/images/article20/main_activity.jpg" width="300">
